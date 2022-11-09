@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+.htmlSet {
+  background-color: rgb(246, 246, 246);
+  height: 95%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Roboto", sans-serif;
+  padding: 16px;
+}
+
+
+
+.appLogIn {
+  background-color: #fff;
+  width: 960px;
+  height: 638px;
+  position: relative;
+  margin-top: -.5rem;
+  border: thin solid #d8d8d8;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.sliderShow {
+  height: 94%;
+  position: relative;
+  width: 55%;
+  padding: 2em 1rem 0 2rem;
+}
+
+.sliderShow:before {
+  content: "";
+  position: absolute;
+  border-right: 1px solid rgb(208, 208, 208);
+  bottom: 4.5%;
+  left: 0;
+  height: 90%;
+  width: 100%;
+}
+
+.swiper-log-in {
+  display: flex;
+  width: 100%;
+  
+}
+
+.slides-log-in {
+  height: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.gap {
+  margin: 5px;
+  padding: 5px;
+}
+
+/* header -------------------------- div -------------------------- */
+.logIn-header-div {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.logIn-header-div h1 {
+  margin: -0.5rem 0 0 0.5rem;
+}
+
+/* -------------------------- message div -------------------------- */
+
+.logIn-message-div {
+  width: 100%;
+  height: 50px;
+}
+
+.logIn-message-div p {
+  width: 90%;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+
+/* -------------------------- image div -------------------------- */
+
+.logIn-image-div {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logIn-image-div img {
+  width: 90%;
+  height: 100%;
+
+}
+
+/* -------------------------- right div -------------------------- */
+
+.log-in-div {
+  height: 94%;
+  position: relative;
+  width: 39%;
+  padding: 1rem 1rem 1rem 1rem;
+
+}
+
+.log-in-tab,
+.sign-up-tab,
+.forgot-password-tab,
+.reset-password-tab {
+  height: 100%;
+  position: relative;
+}
+
+.log-in-main-tab {
+  height: 90%;
+  position: relative;
+  margin-top: 17%;
+}
+
+.sign-up-main-tab {
+  margin-top: 4%;
+}
+
+.forgot-password-main-tab {
+  padding-top: 4rem;
+}
+
+.log-in-main-tab-header,
+.sign-up-main-tab-header,
+.forgot-password-main-tab-header,
+.reset-password-main-tab-header {
+  width: 100%;
+  height: 10%;
+}
+
+.log-in-main-tab-header h2,
+.sign-up-main-tab-header h2,
+.forgot-password-main-tab-header h2,
+.reset-password-main-tab-header h2 {
+  margin-left: 5%;
+}
+
+/* ------------------- login form --------------------*/
+
+#login-form p,
+#signUp-form p,
+#forgot-password-form p,
+#reset-password-form p{
+  margin-top: 15px;
+}
+
+.p {
+  position: relative;
+
+}
+
+.login-form a,
+.login-form a:link,
+.login-form a:visited,
+.login-form a:active,
+.signUp-form a,
+.signUp-form a:link,
+.signUp-form a:visited,
+.signUp-form a:active,
+.forgot-password-form a,
+.forgot-password-form a:link,
+.forgot-password-form a:visited,
+.forgot-password-form a:active {
+  color: #3ca9e2;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.login-form a:focus,
+.login-form a:hover,
+.login-form a:link:focus,
+.login-form a:link:hover,
+.login-form a:visited:focus,
+.login-form a:visited:hover,
+.login-form a:active:focus,
+.login-form a:active:hover,
+.signUp-form a:hover,
+.signUp-form a:link:focus,
+.signUp-form a:link:hover,
+.signUp-form a:visited:focus,
+.signUp-form a:visited:hover,
+.signUp-form a:active:focus,
+.signUp-form a:active:hover,
+.forgot-password-form a:focus,
+.forgot-password-form a:hover,
+.forgot-password-form a:link:focus,
+.forgot-password-form a:link:hover,
+.forgot-password-form a:visited:focus,
+.forgot-password-form a:visited:hover,
+.forgot-password-form a:active:focus,
+.forgot-password-form a:active:hover,
+.reset-password-form a:hover,
+.reset-password-form a:link:focus,
+.reset-password-form a:link:hover,
+.reset-password-form a:visited:focus,
+.reset-password-form a:visited:hover,
+.reset-password-form a:active:focus,
+.reset-password-form a:active:hover {
+  color: #329dd5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#login-form,
+#signUp-form,
+#forgot-password-form,
+#reset-password-form {
+  padding: 0 0 0 15px;
+}
+
+#login-form input,
+#signUp-form input,
+#forgot-password-form input,
+#reset-password-form input {
+  display: block;
+  box-sizing: border-box;
+  width: 98%;
+  outline: none;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.1);
+  border: thin solid transparent;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"],
+#login-form input[type="email"],
+#signUp-form input[type="text"],
+#signUp-form input[type="password"],
+#signUp-form input[type="email"],
+#forgot-password-form input[type="email"],
+#reset-password-form input[type="password"] {
+  width: 98%;
+  padding: 0 0 0 10px;
+  margin: 0;
+  color: #8a8b8e;
+  border: 1px thin #c2c0ca;
+  font-style: normal;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  display: inline-block;
+  background: none;
+}
+
+#login-form input[type="text"]:focus,
+#login-form input[type="password"]:focus,
+#login-form input[type="email"]:focus,
+#signUp-form input[type="text"]:focus,
+#signUp-form input[type="password"]:focus,
+#signUp-form input[type="email"]:focus,
+#forgot-password-form input[type="email"]:focus,
+#reset-password-form input[type="password"]:focus
+ {
+  border-color: #3ca9e2;
+}
+
+#login-form input[type="text"]:focus:invalid,
+#login-form input[type="password"]:focus:invalid,
+#login-form input[type="email"]:focus:invalid,
+#signUp-form input[type="text"]:focus:invalid,
+#signUp-form input[type="password"]:focus:invalid,
+#signUp-form input[type="email"]:focus:invalid,
+#forgot-password-form input[type="email"]:focus:invalid,
+#reset-password-form input[type="password"]:focus:invalid {
+  color: #cc1e2b;
+  border-color: #cc1e2b;
+}
+
+#login-form input[type="text"]:valid~.validation,
+#login-form input[type="password"]:valid~.validation,
+#login-form input[type="email"]:valid~.validation,
+#signUp-form input[type="text"]:valid~.validation,
+#signUp-form input[type="password"]:valid~.validation,
+#signUp-form input[type="email"]:valid~.validation,
+#forgot-password-form input[type="email"]:valid~.validation,
+#reset-password-form input[type="password"]:valid~.validation
+ {
+  display: block;
+  border-color: #0C0;
+}
+
+#login-form input[type="text"]:valid~.validation span,
+#login-form input[type="password"]:valid~.validation span,
+#login-form input[type="email"]:valid~.validation span,
+#signUp-form input[type="text"]:valid~.validation span,
+#signUp-form input[type="password"]:valid~.validation span,
+#signUp-form input[type="email"]:valid~.validation span,
+#forgot-password-form input[type="email"]:valid~.validation span,
+#reset-password-form input[type="password"]:valid~.validation span {
+  background: #0C0;
+  position: absolute;
+  border-radius: 6px;
+}
+
+#login-form input[type="text"]:valid~.validation span:first-child,
+#login-form input[type="password"]:valid~.validation span:first-child,
+#login-form input[type="email"]:valid~.validation span:first-child,
+#signUp-form input[type="text"]:valid~.validation span:first-child,
+#signUp-form input[type="password"]:valid~.validation span:first-child,
+#signUp-form input[type="email"]:valid~.validation span:first-child,
+#forgot-password-form input[type="email"]:valid~.validation span:first-child,
+#reset-password-form input[type="password"]:valid~.validation span:first-child {
+  top: 30px;
+  left: 14px;
+  width: 20px;
+  height: 3px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#login-form input[type="text"]:valid~.validation span:last-child,
+#login-form input[type="password"]:valid~.validation span:last-child,
+#login-form input[type="email"]:valid~.validation span:last-child,
+#signUp-form input[type="text"]:valid~.validation span:last-child,
+#signUp-form input[type="password"]:valid~.validation span:last-child,
+#signUp-form input[type="email"]:valid~.validation span:last-child,
+#forgot-password-form input[type="email"]:valid~.validation span:last-child,
+#reset-password-form input[type="password"]:valid~.validation span:last-child {
+  top: 35px;
+  left: 8px;
+  width: 11px;
+  height: 3px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.validation {
+  display: none;
+  position: absolute;
+  content: " ";
+  height: 60px;
+  width: 30px;
+  right: 15px;
+  top: 0px;
+}
+
+.registerButton, .loginButton, .forgotPasswordButton, .resetPasswordButton {
+  border: none;
+  display: block;
+  background-color: #3ca9e2;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.1);
+  display: block;
+  box-sizing: border-box;
+  width: 98%;
+  outline: none;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px 0 rgb(0, 0, 0, 0.1);
+  border: thin solid transparent;
+  margin-top: 5rem;
+}
+
+.registerButton:active,.loginButton:active,.forgotPasswordButton:active,.resetPasswordButton:active {
+  transform: translateY(4px);
+}
+
+.registerButton {
+  margin-top: 1rem;
+}
+
+.loginButton {
+  margin-top: 13rem;
+}
+.forgotPasswordButton {
+  margin-top: 1rem;
+}
+
+.resetPasswordButton {
+  margin-top: 19rem;
+}
+
+input[type="button"]:hover {
+  background-color: #329dd5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#create-account-wrap, #forgot-password-form {
+  color: #8a8b8e;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+
+}
+
+#create-account-wrap p, #forgot-password-form{
+  text-align: center;
+}
+
+#create-account-wrap p a {
+  text-decoration: none;
+  color: rgb(50, 157, 213);
+}
+
+.forgotPass {
+  text-decoration: none;
+  margin:0 auto;
+  display:inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.forgot-password-form a {
+  text-decoration: none;
+}
+
+.forgot-password-form h2:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: rgb(138, 139, 142);
+  left: 7%;
+  top: 50%;
+  position: absolute;
+}
+
+.forgot-password-form h2:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: rgb(138, 139, 142);
+  right: 7%;
+  top: 50%;
+  position: absolute;
+}
+
+.forgot-password-form h2 {
+  font-family: sans-serif;
+  margin: 50px auto;
+  color: rgb(138, 139, 142);
+  text-align: center;
+  font-size: 15px;
+  max-width: 600px;
+  position: relative;
+  
+}
+
+#forgot-password-email {
+  padding: 0 0 0 10px;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.back-to-log-from-forgot-password {
+  position: absolute;
+  top: 2%;
+}
+
+/* right swiper */
+
+.right-swiper {
+  position: relative;
+  display: flex;
+  width: 90%;
+
+}
+
+.wrapper-right .swiper-slide {
+  height: 38rem;
+
+}
+
+.back-to-log {
+  padding-left: 10px;
+}
+
+@media  (max-width: 970px) {
+  .sliderShow {
+    display: none;
+  }
+
+  .appLogIn {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .log-in-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #login-form,
+  #signUp-form,
+  #forgot-password-form,
+  #reset-password-form {
+  padding: 0 0 0 0;
+  }
+
+  .log-in-main-tab ,
+  .sign-up-main-tab ,
+  .forgot-password-main-tab ,
+  .reset-password-main-tab  {
+  margin-inline: auto;
+  margin-left: 1px;
+  
+  }
+
+  #login-form p,
+  #signUp-form p,
+  #forgot-password-form p,
+  #reset-password-form p{
+   text-align: center;
+  }
+
+  .registerButton, .loginButton, .forgotPasswordButton, .resetPasswordButton { 
+    margin-inline: auto;    
+  }
+}
+
+@media  (max-width: 600px) { 
+  .appLogIn {
+    height: 100%;
+    width: 100%;
+  }
+
+  .htmlSet {
+    padding: 0;
+    height: 100%;
+  }
+
+  .appLogIn {
+    margin-top: 0;
+    border-radius: 0;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0, 0.1);
+  }
+
+  .log-in-div {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+    
+  }
+}
+  

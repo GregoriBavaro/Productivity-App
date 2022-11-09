@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="Statistics/Activity-Summary/ActivitySummary.css" type="text/css" />
+    <link rel="stylesheet" href="Statistics/Focus-Hours/FocusHours.css" type="text/css" />
+    <link rel="stylesheet" href="WorkingSession/workingSessionStyle.css" type="text/css" />
+    <link rel="stylesheet" href="productivity.css" type="text/css" />
+    <link rel="stylesheet" href="logIn/logIn.css" type="text/css" />
+    <link rel="stylesheet" href="testimonials/testimonials.css" type="text/css" />
+    <link rel="stylesheet" href="footer/footer.css" type="text/css" />
+    <link rel="stylesheet" href="gooeyMenu/gooey.css" type="text/css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="media/page-ico/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/themes/airbnb.css">
+    <title>Productivity Web App</title>
+</head>
+
+<body>
+    
+    <div class="canvas-container">
+        <canvas id="gradient-canvas" class="canvas-hero" width="32" height="32"></canvas>
+    </div>
+
+    
+    <!-- NAVIGATION -->
+    
+        <section class="navigation-bar main-page">
+            <div class="row">
+                <div>
+                    <header class="header">
+                        <div class="logo-container">
+                            <img class="logo" src="/media/fast-forward.png">
+                            <h1>Productivity</h1>
+                            <span type="button"class="toggle-btn">&#9776;</span>
+                        </div>
+                        <ul class="display-none-mobile">
+                           
+                            <li><a class="scrollTo" href="#" data-slide="0">Calendar</a></li>
+                            <li><a class="scrollTo" href="#" data-slide="1">Statistics</a></li>
+                            <li><a class="scrollTo" href="#" data-slide="2">Home</a></li>
+                            <li><a class="scrollTo" href="#" data-slide="3">Productivity</a></li>
+                            <li><a class="scrollTo" href="#" data-slide="4">Reminders</a></li>
+                            <button class="sign-up activate">Log in</button>
+                        </ul>
+                    </header>
+                </div>
+            </div>
+        </section >
+
+
+        <!-- HERO Top-->
+        <section class="hero-section-top main-page">
+            <div class="hero row hero_container">
+                <div>
+                    <div class="hero-title-container">
+                        <h1 class="hero-title">Best Way to Manage your Daily Tasks</h1>
+                        <p class="hero-title" data-overlay aria-hidden="true"></p>
+                    </div>
+                    <p class="hurry" >Hurry up join our community now!</p>
+                    <div class="blue-btn">
+                        <a class="first-link hero-btn activate">
+                          Get Started
+                        </a>
+                        <a class="activate sign-up-button">
+                        Sign Up
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="img-container">
+                        <img class="image-back" src="media/hero/loginscreen.png">
+                        <img class="image" src="media/hero/Screenshot_1.png">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="customers-section main-page">
+            <div class="delivered-meals">
+                <div class="delivered-imgs">
+                    <img src="media/users/ana-de-armas.jpg" alt="Customer photo" />
+                    <img src="media/users/batence2.png" alt="Customer photo" />
+                    <img src="media/users/bozanka.png" alt="Customer photo" />
+                    <img src="media/users/dadicka1.png" alt="Customer photo" />
+                    <img src="media/users/maldini.png" alt="Customer photo" />
+                    <img src="media/users/Metalist-Inter_(2).jpg" alt="Customer photo" />
+                </div>
+                <p class="delivered-text">
+                    <span>10,000+</span> optimized lifestyles!
+                </p>
+            </div>
+        </section>
+       
+        <section class="hero-banner main-page" style="overflow: hidden">
+            <div class="container-hero-banner">
+                <div class="card-hero-banner">
+                  <div class="imgBx-hero-banner">
+                    <img src="media/hero/IMG-7041.jpg" alt="">
+                  </div>
+                  <div class="details-hero-banner">
+                    <div class="content-hero-banner">
+                        <h1>SIMPLE</h1>
+                      <h2>A calendar you won’t be able to live without</h2><br>
+                        <h3>Keep track of your progress. Add smart reminders so you never forget a thing. With beautiful themes and turbo-charging powers, you’re guaranteed to save time and achieve great things.</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-hero-banner">
+                  <div class="imgBx-hero-banner">
+                    <img src="media/hero/Screenshot_2.png" alt="">
+                  </div>
+                  <div class="details-hero-banner">
+                    <div class="content-hero-banner">
+                        <h1>EASY</h1>
+                      <h2>The best way to organize your life</h2>
+                      <br>
+                        <h3>Great task management app to use. It allows you to organize and sort tasks, set due dates and reminders, and even track your progress daily. Other useful features include reminders as well as options to sort tasks according to priority and tags!</h3>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--MAIN-->
+        
+        <section class="swiper-section main-page">
+            <div class="swiper" id="swiper">
+                <!-- Additional wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide main-swiper-slide">
+                        <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" id="blobSvg">
+                            <g transform="translate(-158, -118)">
+                              <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                  <stop offset="0%" style="stop-color: rgb(209, 216, 224);"></stop>
+                                  <stop offset="100%" style="stop-color: rgb(89, 143, 148);"></stop>
+                                </linearGradient>
+                              </defs>
+                              <path class="blob" d="M465.5,300.5Q460,351,417,378Q374,405,332,415.5Q290,426,246,444Q202,462,157,442.5Q112,423,81,384.5Q50,346,26,298Q2,250,29.5,203.5Q57,157,91.5,126Q126,95,164.5,68.5Q203,42,251,39Q299,36,326,78Q353,120,382,146.5Q411,173,441,211.5Q471,250,465.5,300.5Z" fill="url(#gradient)"></path>
+                            </g>
+                            <g transform="translate(372, 195)">
+                              <defs>
+                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                  <stop offset="0%" style="stop-color: rgb(209, 216, 224);"></stop>
+                                  <stop offset="100%" style="stop-color: rgb(89, 143, 148);"></stop>
+                                </linearGradient>
+                              </defs>
+                              <path class="blob" d="M465.5,300.5Q460,351,417,378Q374,405,332,415.5Q290,426,246,444Q202,462,157,442.5Q112,423,81,384.5Q50,346,26,298Q2,250,29.5,203.5Q57,157,91.5,126Q126,95,164.5,68.5Q203,42,251,39Q299,36,326,78Q353,120,382,146.5Q411,173,441,211.5Q471,250,465.5,300.5Z" fill="url(#gradient)"></path>
+                            </g>
+                          </svg>
+                        <div class="card-content calendar-page">
+                            <div class="card-body">
+                                <div class="dateInfo">
+                                    <div class="calendarYear">
+                                        <button class="callendarButton" id="prevYearBtn"><a class="arrow arrow-left" title="Previous" href="javascript:;"></a></button> Year: <span
+                                            id="year"></span>
+                                        <button class="callendarButton" id="nextYearBtn"><a class="arrow arrow-right" title="Next" href="javascript:;"></a></button>
+                                    </div>
+                                    <div class="calendarMonth">
+                                        <button class="callendarButton" id="prevMonthbtn"><a class="arrow arrow-left" title="Previous" href="javascript:;"></a></button> Month: <span
+                                            id="monthName"></span>
+                                        <button class="callendarButton" id="nextMonthbtn"><a class="arrow arrow-right" title="Next" href="javascript:;"></a></button>
+                                    </div>
+                                    <div class="calendarContainer">
+                                        <div class="calendarPresentation">
+                                            <div class="showMeToday"></div>
+                                            <div class="showMeMonthAndDay"></div>
+                                            <div class="showMeLargeDate"></div>
+                                        </div>
+                                        <div id="calendarOuterWrapper">
+                                            <div id="calendarMain"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-swiper-slide">
+                        <div class="card-content" id="card-content-statistics">
+                            <div class="card-body" id="card-body-statistics">
+                                <div id="activitySummaryContainer1">
+                                    <h2>Activity Summary</h2>
+                                    <div class="activityCard">
+                                        <div class="acitivityCard_header">
+                                            <i style="font-size:24px" class="fa">&#xf017;</i>
+                                            <p id="dynamicFocusHours"></p>
+                                        </div>
+                                        <p>hours focused</p>
+                                    </div>
+                                    <div class="activityCard">
+                                        <div class="acitivityCard_header">
+                                            <i style="font-size:24px" class="fa">&#xf274;</i>
+                                            <p id="dynamicAccessedDays"></p>
+                                        </div>
+                                        <p>days accessed</p>
+                                    </div>
+                                    <div class="activityCard">
+                                        <div class="acitivityCard_header">
+                                            <i style="font-size:24px" class="fa">&#xf219;</i>
+                                            <p id="dynamicStreakDays"></p>
+                                        </div>
+                                        <p>days streak</p>
+                                    </div>
+                                </div>
+                                <div id="focusHoursContainer">
+                                    <!-- <h3>Focus Hours</h3>
+                                    <div id="chartContainer">
+                                    <canvas id="dynamicChart"></canvas>
+                                    </div>   -->
+                                    <div class="chartMenu"></div>
+                                    <div class="chartCard">
+                                        <div class="chartBox">
+                                            <canvas id="myChart"></canvas>
+                                            <input type="date" id="startDate">
+                                            <input type="date" id="endDate">
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-swiper-slide">
+                        <div class="card-content" id="sessionMain">
+                            <div id="sessionCardButtonsDiv">
+                                <nav class="nav js-nav">
+                                    <ul class="nav__list">
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link nav__link_active sessionButtonTimer" id="timer"
+                                                data-transform="0" type="button">Session</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link sessionButtonShortBreak" id="shortBreak"
+                                                data-transform="100" type="button">Short Break</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link sessionButtonLongBreak" id="longBreak"
+                                                data-transform="200" type="button">Long Break</a>
+                                        </li>
+                                    </ul>
+                                    <div class="nav__slider">
+                                        <div class="nav__slider-rect"></div>
+                                    </div>
+                                </nav>
+                                <button class="item-1" id="endSessionButton">
+                                    <span class="inner">
+                                        <span class="label">End session</span>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="sessionPopUpModals hidden">
+                                <button class="closeSessionModal">&times;</button>
+                                <h1>SessionPopUpModals</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum modi
+                                    illum, velit rem iusto ut! Suscipit doloribus ea deleniti?</p>
+                            </div>
+                            <div class="sessionOverlayDiv hidden"></div>
+                            <div class="hidden timerDiv" id="timerDiv">00:00</div>
+                            <div class="hidden" id="shortBreakDiv">00:00</div>
+                            <div class="hidden" id="longBreakDiv">00:00</div>
+                            <div id="openSessionDiv"></div>
+                            <div id="taskButtons">
+                                <a class="buttonTasks scrollTo" id="addTaskBtn" role="button">
+                                    <span>Add</span>
+                                    <div class="icon">
+                                        <i class="fa fa-remove">&#x2b;</i>
+                                        <i class="fa fa-check">
+                                            <img src="media/logIn-media/done_FILL0_wght400_GRAD0_opsz48.png">
+                                        </i>
+                                    </div>
+                                </a>
+                                <a class="buttonTasks" id="clearTasksBtn" role="button">
+                                    <span>Clear</span>
+                                    <div class="icon">
+                                        <i class="fa fa-remove">&#xd7;</i>
+                                        <i class="fa fa-check">
+                                            <img src="media/logIn-media/done_FILL0_wght400_GRAD0_opsz48.png">
+                                        </i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="taskContainer">
+                                
+                                <div class="taskFormDiv hidden">
+                                    <h3>Add task</h3>
+                                    <div class="taskWrapper">
+                                        <div class="txt_field">
+                                            <input id="inputForTaskTitle" maxlength="20" type="text" placeholder="Title" required>
+                                        </div>
+                                        <div class="form">
+                                            <div class="task-column">
+                                            <div class="timer_field">
+                                                <h4>Task time duration</h4>
+                                                <div class="qty-input">
+                                                    <button id="arrowDown" class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                                                    <input id="inputForTimeOfTask" class="product-qty" type="number" name="product-qty" min="0" max="120" value="1">
+                                                    <button id="arrowUp" class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="timer_field_short">
+                                                <h4>Short break duration</h4>
+                                                <div class="qty-input">
+                                                    <button id="arrowDownShortBreak" class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                                                    <input id="startingShortBreakValueInput" class="product-qty" type="number" name="product-qty" min="0" max="40" value="1">
+                                                    <button id="arrowUpShortBreak" class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="timer_field_long">
+                                                <h4>Long break duration</h4>
+                                                <div class="qty-input">
+                                                    <button id="arrowDownLongBreak" class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                                                    <input id="startingLongBreakValueInput" class="product-qty" type="number" name="product-qty" min="0" max="40" value="1">
+                                                    <button id="arrowUpLongBreak" class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="task-column right-column">
+                                            <div class="selection-container priority">
+                                                <details> 
+                                                    <summary id="priorityClose">
+                                                        <div>Select priority</div><img src="https://cdn-icons-png.flaticon.com/512/271/271210.png" width="20"/>
+                                                    </summary>
+                                                    <ul>
+                                                        <li class="selected-priority" value="High"> <img src="media/high.png" alt="high"/>
+                                                          <p>High</p>
+                                                        </li>
+                                                        <li class="selected-priority" value="Medium"> <img src="media/medium.png" alt="medium"/>
+                                                          <p>Medium</p>
+                                                        </li>
+                                                        <li class="selected-priority" value="Low"> <img src="media/low.png" alt="low"/>
+                                                          <p>Low</p>
+                                                        </li>
+                                                    </ul>
+                                                </details>
+                                            </div>
+                                            <div class="selection-container pace">
+                                                <details> 
+                                                    <summary id="paceClose">
+                                                        <div>Select pace</div><img src="https://cdn-icons-png.flaticon.com/512/271/271210.png" width="20"/>
+                                                    </summary>
+                                                    <ul>
+                                                        <li class="selected-pace" value="High"> <img src="media/high.png" alt="high"/>
+                                                            <p>High</p>
+                                                        </li>
+                                                        <li class="selected-pace" value="Medium"> <img src="media/medium.png" alt="medium"/>
+                                                            <p>Medium</p>
+                                                        </li>
+                                                        <li class="selected-pace" value="Low"> <img src="media/low.png" alt="low"/>
+                                                            <p>Low</p>
+                                                        </li>
+                                                    </ul>
+                                                </details>
+                                            </div>
+                                            <div class="selection-container note-container">
+                                                <button id="noteForTaskBtn">+ Add note</button>
+                                                <textarea maxlength="300" name="Task description" class="reminderInput" id="taskText" cols="30" rows="3" placeholder=""></textarea>
+                                            </div>
+                                            </div>
+                                        </div> <!-- div of class form -->
+                                    </div>
+                                    <div class=" button_field">
+                                        <button id="cancelTaskButton">Cancel</button>
+                                        <button class="values" id="saveTaskButton">Save</button>
+                                    </div>
+                                </div> <!-- div of class taskFormDiv -->
+                            </div> <!-- div of class taskContainer -->
+                            <div class="listOfTasksDiv">
+                                <ol class="orderedListOfTasks">
+                                </ol>
+                            </div>
+                        </div> <!-- div of class card-content -->
+                    </div> <!-- div of class swiper-slid -->
+                    <div class="swiper-slide main-swiper-slide">
+                        <div class="card-content productivity-container"></div>
+                    </div>
+
+                    <div class="swiper-slide main-swiper-slide">
+                        <div class="card-body-reminders flex-direction">
+                            <div class="box-out">
+                                <div class="menu-btn"></div>
+                                <div id="AddReminderPopUpContainer" class="div1">
+                                    <span>
+                                        <div class="AddReminderPopUp">
+                                            <div class="textAndNote">
+                                                <input class="reminderInput" id="inputForCreatingReminder" type="text" placeholder="Title">
+                                                <br />
+                                                <textarea id="reminder-note" class="reminderInput" maxlength="300" name="Reminder note" cols="30" rows="3" placeholder="Notes"></textarea>
+                                            </div>
+                                            <div class="dateForReminder">
+                                                <div class="wrapper-datePicker"> 
+                                                    <input type="text" id="datepicker" autocomplete="off" placeholder="Pick a date">
+                                                </div>
+                                            </div>
+                                            <div class="timeForReminder">
+                                                <div class="wrapper-datePicker">
+                                                    <input type="text" id="timePicker" autocomplete="off" placeholder="Pick a time">
+                                                </div>
+                                            </div>
+                                            <div class="priorityForReminder selection-container">
+
+                                                <details> 
+                                                    <summary class="priority-reminder" id="reminderClose">
+                                                        <div>Select priority</div><img src="https://cdn-icons-png.flaticon.com/512/271/271210.png" width="20"/>
+                                                    </summary>
+                                                    <ul class="ul-priority-reminder">
+                                                        <li class="selected-priority-reminder" value="High"> <img src="media/high.png" alt="high"/>
+                                                          <p>High</p>
+                                                        </li>
+                                                        <li class="selected-priority-reminder" value="Medium"> <img src="media/medium.png" alt="medium"/>
+                                                          <p>Medium</p>
+                                                        </li>
+                                                        <li class="selected-priority-reminder" value="Low"> <img src="media/low.png" alt="low"/>
+                                                          <p>Low</p>
+                                                        </li>
+                                                    </ul>
+                                                </details>
+                                            </div>
+                                        </div>
+                                    </span>
+                                    <div class="showReminders">
+                                        <button class="showAllRemindersBtn">Show reminders</button>
+                                    </div>
+                                    <div class="reminderBtnsDiv">
+                                        <a class="reminderBtns buttonTasks" id="reminderBtn" role="button">
+                                            <span>Add</span>
+                                            <div class="icon">
+                                                <i class="fa fa-remove">&#x2b;</i>
+                                                <i class="fa fa-check">
+                                                    <img src="media/logIn-media/done_FILL0_wght400_GRAD0_opsz48.png">
+                                                </i>
+                                            </div>
+                                        </a>
+                                        <a class="reminderBtns buttonTasks button" role="button">
+                                            <span>Clear</span>
+                                            <div class="icon">
+                                                <i class="fa fa-remove">&#xd7;</i>
+                                                <i class="fa fa-check">
+                                                    <img src="media/logIn-media/done_FILL0_wght400_GRAD0_opsz48.png">
+                                                </i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="remindersContainer" class="div2">
+                                <span>
+                                <div class="remindersTable card-reminder" id="remindersTableId"></div>
+                                </span>
+                            </div>
+                        </div>
+                    </div> <!-- swiper slide reminders -->
+                </div> <!-- swiper wrapper -->
+            </div> <!-- swiper -->
+        </section>
+        
+        <!--TESTIMONIALS-->
+        
+        <section class="testimonials-wrapper  main-page">
+
+            <div class="custom-shape-divider-bottom-1666015626">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+        <section class="section-footer main-page">
+            <div class="pg-footer">
+                <footer class="footer">
+                    <div class="footer-content">
+                        <div class="footer-content-column">
+                            <div class="footer-logo">
+                                <a class="footer-logo-link" href="#">
+                                    <h1>Productivity</h1>
+                                </a>
+                            </div>
+                            <div class="footer-menu">
+                                <h2 class="footer-menu-name">Where to find us</h2>
+                                    <ul id="menu-get-started" class="footer-menu-list">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                            <img src="/media/location.gif">
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <div class="footer-content-column">
+                            <div class="footer-menu">
+                                <h2 class="footer-menu-name"> Company</h2>
+                                    <ul id="menu-company" class="footer-menu-list">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="#">Contact</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                                            <a href="#">News</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="#">Careers</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                            <div class="footer-menu">
+                                <h2 class="footer-menu-name"> Legal</h2>
+                                    <ul id="menu-legal" class="footer-menu-list">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                                            <a href="#">Privacy Notice</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                            <a href="#">Terms of Use</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <div class="footer-content-column">
+                            <div class="footer-menu">
+                                <h2 class="footer-menu-name"> Quick Links</h2>
+                                <ul id="menu-quick-links" class="footer-menu-list">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                        <a target="_blank" rel="noopener noreferrer" href="#">Support Center</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                        <a target="_blank" rel="noopener noreferrer" href="#">Service Status</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="#">Security</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                                        <a href="#">Customers</a></li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="#">Reviews</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="menu">
+                        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+                        <label class="menu-open-button" for="menu-open">
+                            <span><img src="media/186407_arrow_up_icon.png"></span>
+                        </label>
+                        <button class="menu-item-menu scrollToTop"> TOP </button>
+                        <button class="menu-item-menu scrollTo"> HOME </button>
+                    </nav>
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <defs>
+                            <filter id="shadowed-goo">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                                <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                                <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                                <feComposite in2="shadow" in="goo" result="goo" />
+                                <feComposite in2="goo" in="SourceGraphic" result="mix" />
+                            </filter>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                <feComposite in2="goo" in="SourceGraphic" result="mix" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </footer>
+            </div>
+        </section>
+    <!-- </div> -->
+    
+    
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="script_calendar.js"></script>
+    <script src="Statistics/Focus-Hours/FocusHours.js"></script>
+    <script src="Statistics/Activity-Summary/ActivitySummary.js"></script>
+    <script type="module" src="WorkingSession/working_session.js"></script>
+    <script src="testimonials/testimonials.js"></script>
+    <script src="logIn/logIn.js"></script>
+    <script src="productivity.js"></script>
+    
+</body>
+
+</html>

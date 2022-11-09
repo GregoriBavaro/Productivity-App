@@ -1,0 +1,69 @@
+/* #chartContainer {
+    display: block;
+    height:185px;
+    width:607px;    
+}
+#dynamicChart {
+    height:100%;
+    width:100%;    
+} */
+/* * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+} */
+
+#focusHoursContainer{
+    width: 60rem;
+   
+}
+
+.chartCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.chartBox {
+    width: 90%;
+    height: 85%;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: rgb(245, 242, 228);
+    margin-top: 4%;
+    
+}
+
+#dynamicFocusHours {
+    font-size:1.4rem;
+}
+
+#startDate, #endDate {
+    border-radius: 0.3rem;
+    border: none;
+    height: 1.5rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 0px;
+    outline: 0px;
+    border-style: none;
+    border-color: Transparent;
+    
+}
+
+@media (max-width: 990px) {
+    .chartBox {
+        position: absolute;
+        transform: translate(-50%);
+        width: 90%;
+        max-height: 55%;
+        padding: 2rem;
+        border-radius: 2rem;
+        background: rgb(245, 242, 228);
+        margin-top: 4%;
+        left: 50%;
+        right: 50%;
+        top: 0;
+    }
+}

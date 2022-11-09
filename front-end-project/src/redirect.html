@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="4000; URL=http://127.0.0.1:5501/src/index.html" /> -->
+    <link rel="stylesheet" href="logIn/logIn.css" type="text/css" />
+    <link rel="stylesheet" href="redirect.css" type="text/css" />
+    <title>redirect/password-reset</title>
+</head>
+<body class="div3">
+    <div class="reset-page">
+       <idv class="reset-container">
+            <h2>Reset password<h2>
+            <form id="reset-password-form" class="reset-password-form">
+                <p>
+                <input type="password" id="reset-password" name="reset-password" placeholder="New password" required><i class="validation"><span></span><span></span></i>
+                </p>
+                <p>
+                <input type="password" id="confirm-reset-password" name="confirm-reset-password" placeholder="Confirm password" required><i class="validation"><span></span><span></span></i>
+                </p>
+                <p>
+                <button type="button" class="resetPasswordButton" id="reset-password-button">Reset password</button>
+                </p>
+            </form>
+        </idv>
+    </div>
+    <script src="redirect.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
